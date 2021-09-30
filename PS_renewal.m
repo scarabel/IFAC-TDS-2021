@@ -5,8 +5,6 @@ function out = PS_renewal
 % the nonlinear RE taken from Breda et al, EJQTDE 2016,
 % x(t) = 0.5*gamma*int_a0^tau x(t-a)*exp(x(t-a))da
 % for the integrated state B=int_0^t x(s)ds
-% The code uses the function polint.m, available from the Differentiation
-% Matrix Suite by Weideman, Reddy, 2000
 
 out{1} = @init;
 out{2} = @fun_eval;

@@ -40,14 +40,14 @@ cpl(xe,ve,se,[M+1 M]);
 xlabel('$\log(\gamma)$', 'Interpreter','latex');
 hold on;
 
+%% Equilibrium continuation from BP
+
 % Detection of branching point
 sBP = se(2);
 BP_index = se(2).index;
 BP = xe(1:M,BP_index);
 par(ap1) = xe(end,BP_index);
 
-
-%% Equilibrium continuation from BP
 % set options
 opt=contset(opt,'Backward',0);
 opt=contset(opt,'MaxNumPoints',500);
